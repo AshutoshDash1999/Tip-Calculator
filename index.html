@@ -14,21 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap" rel="stylesheet">
 
-    <style>
-        body{
-            background: radial-gradient(circle at 60% 40%, #10b981 25%, transparent 26%),radial-gradient(circle at 40% 60%, #10b98180 25%, transparent 26%) ;
-            background-size: 2em 2em;
-            background-color: #f9f9ff;
-            z-index: -1;
-            font-family: 'Rubik', sans-serif;
-        }
-
-        
-    </style>
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body class="bg-lime-100">
     
-    <section class="flex flex-col justify-center items-center mx-auto my-16 w-4/5 p-8 rounded-2xl border-4 border-green-500 backdrop-blur-md">
+    <section class="flex flex-col justify-center items-center mx-auto my-2 w-4/5 p-8 rounded-2xl border-4 border-green-500 backdrop-blur-md">
         <p class="text-4xl font-bold">Tip Calculator</p>
         <label for="billAmount" class="text-gray-600 font-extrathin">Enter bill total: </label>
         <p class="text-teal-700">
@@ -65,8 +56,11 @@
             <p class="text-gray-600 font-extrathin">Tip Amount: </p>
             <p class=" text-center text-teal-700 font-bold text-3xl" id="tipAmount">	&#8377; 0</p>
         </section>
-    </section>
-        
+
+        <footer class="my-4">
+            <p class="text-gray-600">Made by <a class="text-blue-500 underline underline-offset-2 hover:decoration-wavy" href="https://ashutoshdash.netlify.app">Ashutosh Dash</a>🌱</p>
+        </footer>
+    </section>        
 
     <script src="script.js"></script>
 </body>
