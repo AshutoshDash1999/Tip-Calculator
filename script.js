@@ -22,13 +22,16 @@ decrementBtn.addEventListener("click", decrementFunc);
 
 function tipAmountFinder(){
     let tip = Number(billAmount.value)*(tipPercentage/100)
-    return tip;
+    return tip.toFixed(2);
 }
 
 function amountPerPersonFinder(){
     let amountAfterTip = Number(billAmount.value) + tipAmountFinder()
     let amountPerPerson = amountAfterTip/Number(noOfPeople.value)
-    return amountPerPerson;
+    if (Number.isNaN(amountPerPerson)){
+        return "0";
+    }
+    return amountPerPerson.toFixed(2);
 }
 
 function btnClickHandler(){

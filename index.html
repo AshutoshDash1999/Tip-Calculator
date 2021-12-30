@@ -29,15 +29,15 @@
 <body class="bg-lime-100">
     
     <section class="flex flex-col justify-center items-center mx-auto my-16 w-4/5 p-8 rounded-2xl border-4 border-green-500 backdrop-blur-md">
-        <p class="text-2xl">Tip Calculator</p>
+        <p class="text-4xl font-bold">Tip Calculator</p>
         <label for="billAmount" class="text-gray-600 font-extrathin">Enter bill total: </label>
         <p class="text-teal-700">
-            <span>&#8377;</span>
-            <input type="number" class="border-2 border-b-green-500 focus:border-green-500 rounded-md p-1 focus:outline-none transition ease-in-out delay-100 font-bold drop-shadow-xl" id="billAmount" min="0">
+            <span class="text-2xl">&#8377;</span>
+            <input type="number" class="border-2 border-b-green-500 focus:border-green-500 rounded-md p-1 focus:outline-none transition ease-in-out delay-100 font-bold text-2xl drop-shadow-xl" id="billAmount" min="0">
         </p>
         <br>
         <label class="text-gray-600 font-extrathin" for="tipPercentage">Tip Amount:</label>
-        <select name="Tip" class="bg-green-500 text-gray-100 border-2 border-green-500 rounded-md focus:outline-none drop-shadow-xl " id="tipPercentage">
+        <select name="Tip" class="bg-green-500 text-gray-100 border-2 border-green-500 rounded-md focus:outline-none drop-shadow-xl text-2xl" id="tipPercentage">
             <option value="5">5%</option>
             <option value="10">10%</option>
             <option value="15">15%</option>
@@ -53,7 +53,7 @@
         <label class="text-gray-600 font-extrathin" for="people">Split Among:</label>
         <p>
             <button class="bg-emerald-500 text-gray-100 px-4 py-2 rounded-md text-xl" id="incrementBtn">+</button>
-            <input type="number" class="border-2 border-b-green-500 focus:border-green-500 rounded-md p-1 focus:outline-none transition ease-in-out delay-100 font-bold drop-shadow-xl text-teal-700 text-center" id="noOfPeople" name="" id="people" min="1">
+            <input type="number" class="border-2 border-b-green-500 focus:border-green-500 rounded-md p-1 focus:outline-none transition ease-in-out delay-100 font-bold drop-shadow-xl text-teal-700 text-center text-2xl" id="noOfPeople" name="" id="people" min="1" value="1">
             <button class="bg-emerald-500 text-gray-100 px-4 py-2 rounded-md text-xl" id="decrementBtn">-</button>
         </p>
         <br>
