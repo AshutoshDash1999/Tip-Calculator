@@ -26,10 +26,10 @@ function tipAmountFinder(){
 }
 
 function amountPerPersonFinder(){
-    let amountAfterTip = Number(billAmount.value) + tipAmountFinder()
+    let amountAfterTip = Number(billAmount.value) + Number(tipAmountFinder())
     let amountPerPerson = amountAfterTip/Number(noOfPeople.value)
     if (Number.isNaN(amountPerPerson)){
-        return "0";
+        return 0;
     }
     return amountPerPerson.toFixed(2);
 }
